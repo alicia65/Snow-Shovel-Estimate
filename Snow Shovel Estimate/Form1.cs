@@ -33,6 +33,51 @@ namespace Snow_Shovel_Estimate
             frmSpecialRequests.Tag = lblSpecialRequests.Text;
             //Show the FormSpecialRequests form as a dialog
             DialogResult specialRequestsResults = frmSpecialRequests.ShowDialog();
+
+            //This method won't continue until the user closes the special requests form
+            if (specialRequestsResults == DialogResult.OK) 
+            {
+                if (frmSpecialRequests.Tag is string specialRequests) 
+                {
+                    lblSpecialRequests.Text = specialRequests;
+                }
+            }
+
+
+        }
+
+        private void lblEstimatedPrice_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text;
+            string address = txtAddress.Text;
+            DateTime date = dteAppointmentDate.Value;
+
+            if(String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(address) || date == null) 
+            {
+                MessageBox.Show("Fill in all fields", "Error");
+                return;
+            }
+
+            double price;
+
+            //Which radio button  was selected? 
+            if (rdoSingle.Checked) 
+            {
+                price = 20;
+            }
+            else 
+            {
+                price = 30;
+            }
+
+            //If the Date property of the DateToome os Today, add $5
+            if (date.Date == DateTime.Today)
+            {
+                price += 5;
+            }
+
+            txtPrice.Text = $"{price:c}"; // Format and show the price as currency
+            
         }
     }
 }

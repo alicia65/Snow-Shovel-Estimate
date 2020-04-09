@@ -171,6 +171,7 @@
             this.lblEstimatedPrice.TabIndex = 10;
             this.lblEstimatedPrice.Text = "Estimated Price";
             this.lblEstimatedPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEstimatedPrice.Click += new System.EventHandler(this.lblEstimatedPrice_Click);
             // 
             // txtPrice
             // 

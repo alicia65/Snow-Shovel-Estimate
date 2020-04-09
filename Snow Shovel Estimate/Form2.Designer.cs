@@ -40,6 +40,7 @@
             this.txtRequests.Name = "txtRequests";
             this.txtRequests.Size = new System.Drawing.Size(444, 243);
             this.txtRequests.TabIndex = 0;
+            this.txtRequests.TextChanged += new System.EventHandler(this.txtRequests_TextChanged);
             // 
             // btnSave
             // 
@@ -49,6 +50,7 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -58,6 +60,7 @@
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FormSpecialRequests
             // 
@@ -69,6 +72,8 @@
             this.Controls.Add(this.txtRequests);
             this.Name = "FormSpecialRequests";
             this.Text = "Special Requests";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSpecialRequest_Close);
+            this.Load += new System.EventHandler(this.FormSpecialRequests_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

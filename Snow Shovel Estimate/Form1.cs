@@ -48,11 +48,16 @@ namespace Snow_Shovel_Estimate
 
         private void lblEstimatedPrice_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnGetEstimate_Click(object sender, EventArgs e)
+        {
             string name = txtName.Text;
             string address = txtAddress.Text;
             DateTime date = dteAppointmentDate.Value;
 
-            if(String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(address) || date == null) 
+            if (String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(address) || date == null)
             {
                 MessageBox.Show("Fill in all fields", "Error");
                 return;
@@ -61,11 +66,11 @@ namespace Snow_Shovel_Estimate
             double price;
 
             //Which radio button  was selected? 
-            if (rdoSingle.Checked) 
+            if (rdoSingle.Checked)
             {
                 price = 20;
             }
-            else 
+            else
             {
                 price = 30;
             }
@@ -77,7 +82,7 @@ namespace Snow_Shovel_Estimate
             }
 
             txtPrice.Text = $"{price:c}"; // Format and show the price as currency
-            
+
         }
     }
 }

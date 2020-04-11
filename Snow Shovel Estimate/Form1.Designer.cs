@@ -66,7 +66,7 @@
             this.lblName.Location = new System.Drawing.Point(23, 38);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(114, 23);
-            this.lblName.TabIndex = 2;
+            this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
             // lblAddress
@@ -74,7 +74,7 @@
             this.lblAddress.Location = new System.Drawing.Point(23, 96);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(100, 23);
-            this.lblAddress.TabIndex = 3;
+            this.lblAddress.TabIndex = 2;
             this.lblAddress.Text = "Address";
             // 
             // lblDateRequested
@@ -82,7 +82,7 @@
             this.lblDateRequested.Location = new System.Drawing.Point(23, 159);
             this.lblDateRequested.Name = "lblDateRequested";
             this.lblDateRequested.Size = new System.Drawing.Size(135, 23);
-            this.lblDateRequested.TabIndex = 4;
+            this.lblDateRequested.TabIndex = 0;
             this.lblDateRequested.Text = "Date Requested";
             // 
             // dteAppointmentDate
@@ -90,7 +90,7 @@
             this.dteAppointmentDate.Location = new System.Drawing.Point(230, 160);
             this.dteAppointmentDate.Name = "dteAppointmentDate";
             this.dteAppointmentDate.Size = new System.Drawing.Size(517, 22);
-            this.dteAppointmentDate.TabIndex = 5;
+            this.dteAppointmentDate.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -99,7 +99,7 @@
             this.groupBox1.Location = new System.Drawing.Point(26, 223);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(259, 100);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Type of Sidewalk";
             // 
@@ -130,9 +130,10 @@
             this.btnGetEstimate.Location = new System.Drawing.Point(26, 377);
             this.btnGetEstimate.Name = "btnGetEstimate";
             this.btnGetEstimate.Size = new System.Drawing.Size(147, 30);
-            this.btnGetEstimate.TabIndex = 7;
+            this.btnGetEstimate.TabIndex = 5;
             this.btnGetEstimate.Text = "Get Estimate";
             this.btnGetEstimate.UseVisualStyleBackColor = true;
+            this.btnGetEstimate.Click += new System.EventHandler(this.btnGetEstimate_Click);
             // 
             // grox2
             // 
@@ -140,7 +141,7 @@
             this.grox2.Location = new System.Drawing.Point(407, 223);
             this.grox2.Name = "grox2";
             this.grox2.Size = new System.Drawing.Size(241, 100);
-            this.grox2.TabIndex = 8;
+            this.grox2.TabIndex = 13;
             this.grox2.TabStop = false;
             this.grox2.Text = "Special Requests";
             // 
@@ -158,7 +159,7 @@
             this.btnAddSpecialRequests.Location = new System.Drawing.Point(424, 341);
             this.btnAddSpecialRequests.Name = "btnAddSpecialRequests";
             this.btnAddSpecialRequests.Size = new System.Drawing.Size(192, 30);
-            this.btnAddSpecialRequests.TabIndex = 9;
+            this.btnAddSpecialRequests.TabIndex = 4;
             this.btnAddSpecialRequests.Text = "Add Special Requests";
             this.btnAddSpecialRequests.UseVisualStyleBackColor = true;
             this.btnAddSpecialRequests.Click += new System.EventHandler(this.btnAddSpecialRequests_Click);
@@ -168,7 +169,7 @@
             this.lblEstimatedPrice.Location = new System.Drawing.Point(261, 384);
             this.lblEstimatedPrice.Name = "lblEstimatedPrice";
             this.lblEstimatedPrice.Size = new System.Drawing.Size(144, 23);
-            this.lblEstimatedPrice.TabIndex = 10;
+            this.lblEstimatedPrice.TabIndex = 3;
             this.lblEstimatedPrice.Text = "Estimated Price";
             this.lblEstimatedPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEstimatedPrice.Click += new System.EventHandler(this.lblEstimatedPrice_Click);
@@ -179,7 +180,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(157, 22);
-            this.txtPrice.TabIndex = 11;
+            this.txtPrice.TabIndex = 6;
             // 
             // Form1
             // 

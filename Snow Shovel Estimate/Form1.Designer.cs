@@ -200,7 +200,7 @@
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtName);
             this.Name = "Form1";
-            this.Text = "Snow Shovel Estimate";
+            this.Text = "13.2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
